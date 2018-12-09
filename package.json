@@ -65,7 +65,7 @@
   "dependencies": {
     "es6-promise": "^3.0.2",
     "flux": "^2.1.1",
-    "lodash": "^3.10.1",
+    "lodash": ">=4.17.5",
     "node-sass": "^3.3.3",
     "normalize.css": "^3.0.3",
     "object-assign": "^4.0.1",
@@ -78,6 +78,6 @@
     "react-highcharts": "^11.0.0",
     "react-router": "^2.6.1",
     "sass-loader": "^1.0.1",
-    "superagent": "^1.7.2"
+    "superagent": ">=3.7.0"
   }
 }
