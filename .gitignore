@@ -28,3 +28,19 @@ node_modules
 
 # Bower
 bower_components/
+
+*.sublime-workspace
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.idea/
+test/temp-test
+coverage/
