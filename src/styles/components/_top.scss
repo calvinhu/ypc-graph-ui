@@ -1,0 +1,29 @@
+.two-table-container {
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
+}
+
+.two-table-container .table-container {
+  flex: 1;
+  padding: 0;
+}
+
+.table-container .name {
+  max-width: 90px;
+}
+
+/* Bigger than 768 */
+@media (min-width: 768px) {
+
+  .two-table-container {
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+  }
+
+  .two-table-container .table-container {
+    flex: 1;
+    /*max-width: 480px;*/
+    padding: 0 15px;
+  }
+}
