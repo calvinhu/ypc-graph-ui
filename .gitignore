@@ -44,3 +44,4 @@ $RECYCLE.BIN/
 .idea/
 test/temp-test
 coverage/
+dist/
