@@ -15,6 +15,11 @@ apiParser.makeGraphData = function(response) {
     rush['rush yards'] = rush_attempts.reduce(function(a,b) { return a + b.yards },0);
     rush['avg YPC'] = rush_attempts.length == 0 ? 0 : parseFloat(rush['rush yards'] / rush['carries']).toFixed(1);
 
+    var receive = {};
+    receive['receptions'] = pass_attempts.length;
+    receive['rec yards'] = pass_attempts.reduce(function(a,b) { return a + b.yards },0);
+    receive['avg YPR'] = pass_attempts.length == 0 ? 0 : parseFloat(receive['rec yards'] / receive['receptions']).toFixed(1);
+
     function aggregate(list) {
       var result = {};
       //initialize all yardages from -5 to 50 to zero
@@ -99,7 +104,8 @@ apiParser.makeGraphData = function(response) {
 
     return {
       "graphData": result,
-      "rushStats": rush
+      "rushStats": rush,
+      "receiveStats": receive,
     }
 }
 

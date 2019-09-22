@@ -72,9 +72,15 @@ class GraphComponent extends React.Component {
         ],
         plotLines: [
           {
-            color: '#7CB5EC', // Red
+            color: '#7CB5EC',
             width: 1,
             value: data["rushStats"]["avg YPC"],
+            zIndex: 3
+          },
+          {
+            color: '#90ED7D',
+            width: 1,
+            value: data["receiveStats"]["avg YPR"],
             zIndex: 3
           }
         ],
